@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="Console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %c{1} - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="RollingAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <!-- todo, need to replace the logs path-->
+        <param name="File" value="/path/to/logs/scraper.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+        <param name="ImmediateFlush" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%p] %d %c %M - %m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="info" />
+        <appender-ref ref="Console" />
+        <appender-ref ref="RollingAppender" />
+    </root>
+
+</log4j:configuration>
