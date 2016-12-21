@@ -17,8 +17,8 @@
 		<param name="File" value="/path/to/logs/scraper.log" />
 
 ##Run
-'cd TripAdvisorScraper/'
-'mvn jetty:run'
+        cd TripAdvisorScraper/
+        mvn jetty:run
 
 * Visit http://localhost:8080/
 
