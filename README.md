@@ -8,7 +8,7 @@
 
 * Modify 'TripAdvisorScraper/src/main/resources/META-INF/properties/hibernate.properties'.
 
-		url=jdbc:mysql://127.0.0.1:3306/scraper?useUnicode=true&characterEncoding=UTF-8
+		url=jdbc:mysql://127.0.0.1:3306/your_database_name?useUnicode=true&characterEncoding=UTF-8
 		username=your database username
 		password=your database password.
 
