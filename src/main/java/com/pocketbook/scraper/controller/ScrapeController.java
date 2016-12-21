@@ -35,7 +35,7 @@ public class ScrapeController {
      */
     @RequestMapping("")
     public String index() {
-        return "home";
+        return "index";
     }
 
     /**
