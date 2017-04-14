@@ -1,6 +1,6 @@
 # TripAdvisorScraper
 
-##Setup
+## Setup
 
 * Install maven and setup corresponding environment.
 * Install mysql server and setup corresponding environment.
@@ -16,7 +16,7 @@
 
 		<param name="File" value="/path/to/logs/scraper.log" />
 
-##Run
+## Run
 * Run command as below:
 ```sh
         cd TripAdvisorScraper/
